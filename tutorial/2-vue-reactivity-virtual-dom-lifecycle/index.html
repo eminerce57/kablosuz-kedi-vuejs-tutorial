@@ -34,14 +34,27 @@
         align-items: center;
         justify-content: center;
     }
+    button{
+        width: 100%;
+    }
 </style>
 </head>
 <body>
     <div class="box">
 <h1>{{number}}</h1>
-<button @click="number++">+</button>
+<button  @click="number++">+</button>
 <button  @click="number--">-</button>
+<p>{{result()}}</p>
     </div>
+
+    <div class="box">
+        <h1>{{number2}}</h1>
+        <button  @click="number2++">+</button>
+        <button  @click="number2--">-</button>
+        <p>{{result2()}}</p>
+            </div>
+
+
 </body>
 <script src="app.js"></script>
 </html>
