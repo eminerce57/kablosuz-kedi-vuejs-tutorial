@@ -13,7 +13,20 @@
 <p>{{content }}</p>
 <p>{{array }}</p>
 <p  v-html="details"></p>
+<a :href="url">eminerce.com</a>
+<br><br>
+<!-- EventListener = v-on -->
+<button v-on:click="title='change title';content='this content'">click and change title</button>
+or in js function<br>
+<button @click="updateTitle('get event')">click and change title from js</button>
 
+<div style="width: 300px; height: 300px ; background-color: bisque;" @click="title='div click event'" @mousemove="updatecordinate">  div click event and div cordinat event <b>{{divCordinat}}</b> </div>
+<br><br><br><br><br>
+
+<input type="text" :value="inputValue" @input="updateValue"> {{inputValue}}
+<br><br>
+or v-model
+<input type="text"  v-model="inputValue" >{{inputValue}}
 </body>
 
 <script src="app.js"></script>
