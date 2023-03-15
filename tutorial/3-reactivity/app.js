@@ -7,6 +7,8 @@ number2 :0,
         };
     },
 methods: {
+},
+computed:{
     result(){
         console.log("working result 1")
        return this.number > 0
@@ -25,37 +27,16 @@ methods: {
         :"----"
 
     }
+        
+},
+watch:{
+    number(newValue,oldValue){
+        console.log("working number",newValue,oldValue)
+
+    }
+}
 
 
-
-     
-},
-
-beforeCreate() {
-    console.log("before create")
-},
-created() {
-    console.log("create")
-},
-beforeMount() {
-    console.log("before mount")
-},
-
-mounted() {
-    console.log("mounted")
-},
-beforeUpdate() {
-    console.log("before update")
-},
-updated() {
-    console.log("updated")
-},
-beforeUnmount() {
-    console.log(" before un mount")
-},
-unmounted() {
-    console.log(" un mounted")
-},   
 
     })
 
