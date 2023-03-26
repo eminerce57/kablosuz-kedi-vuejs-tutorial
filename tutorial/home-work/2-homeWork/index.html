@@ -10,21 +10,15 @@
  
 </head>
 <body>
-<h1> home work 1 <br>
-    my name is 
-    {{name}} {{surname}}
-    I am {{age}} years old
-</h1>
-<hr> 
-<input type="text" v-model="name" >
+<h1>home work 2</h1>
+<button class="btn btn-danger" @click="showalert()">show alert </button>
 <hr>
-{{age * 5}}
+<input @keyup="value = $event.target.value" >
+<p>{{value}}</p>
+for enter
 <hr>
-{{getrandom()}}
-<hr>
-<img :src="img">
-<hr>
-
+<input @keydown.enter="value = $event.target.value" >
+<p>{{value}}</p>
 </body>
 <script src="app.js"></script>
 </html>
