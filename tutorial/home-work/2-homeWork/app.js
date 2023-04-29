@@ -7,7 +7,6 @@ const app = Vue.createApp({
     methods: {
         showalert(){
             alert("hi")
-            
         }
     },
     })
